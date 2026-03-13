@@ -57,6 +57,18 @@ public class Ui {
     }
 
     /**
+     * Displays a success message after an expense is deleted.
+     *
+     * @param expense the expense that was removed
+     */
+    public void showDeleteSuccess(Expense expense) {
+        System.out.println(LINE);
+        System.out.println(" Expense deleted:");
+        System.out.println("   " + expense);
+        System.out.println(LINE);
+    }
+
+    /**
      * Displays an error message to the user.
      *
      * @param message the error message to display
