@@ -96,6 +96,13 @@ public class Ui {
 
         System.out.println(LINE);
         System.out.println(" Total entries: " + expenses.size());
+     /* Displays the total sum of all expenses.
+     *
+     * @param total the total expense amount
+     */
+    public void showTotal(double total) {
+        System.out.println(LINE);
+        System.out.printf(" Total expenses: $%.2f%n", total);
         System.out.println(LINE);
     }
 

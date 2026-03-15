@@ -3,6 +3,7 @@ package seedu.duke;
 import seedu.duke.command.AddCommand;
 import seedu.duke.command.Command;
 import seedu.duke.command.ListCommand;
+import seedu.duke.command.TotalCommand;
 
 /**
  * Parses user input into commands.
@@ -25,6 +26,8 @@ public class Parser {
             return parseAddCommand(parts.length > 1 ? parts[1] : "");
         case "list":
             return new ListCommand();
+        case "total":
+            return new TotalCommand();
         case "bye":
             return new ExitCommand();
         default:
