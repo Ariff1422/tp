@@ -66,6 +66,10 @@ public class Ui {
         System.out.println(LINE);
         System.out.println(" Expense deleted:");
         System.out.println("   " + expense);
+        System.out.println(LINE);
+    }
+
+    /**
      * Displays all expenses in a formatted table.
      *
      * @param expenses the list of expenses to display
@@ -104,7 +108,11 @@ public class Ui {
 
         System.out.println(LINE);
         System.out.println(" Total entries: " + expenses.size());
-     /* Displays the total sum of all expenses.
+        System.out.println(LINE);
+    }
+
+    /**
+     * Displays the total sum of all expenses.
      *
      * @param total the total expense amount
      */
