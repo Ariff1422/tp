@@ -40,7 +40,6 @@ public class DeleteCommand extends Command {
     public void execute(ExpenseList expenses, Ui ui) throws SpendTrackException {
         assert expenses != null : "ExpenseList should not be null";
         assert ui != null : "Ui should not be null";
-        assert index > 0 : "Index should be positive";
 
         logger.info("Attempting to delete expense at index: " + index);
         if (index < 1 || index > expenses.size()) {
