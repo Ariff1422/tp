@@ -1,10 +1,11 @@
 package seedu.duke.command;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 import seedu.duke.ExpenseList;
 import seedu.duke.SpendTrackException;
 import seedu.duke.Ui;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 /**
  * Sets the monthly budget limit for SpendTrack.
