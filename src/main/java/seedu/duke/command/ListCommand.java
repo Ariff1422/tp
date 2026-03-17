@@ -1,9 +1,10 @@
 package seedu.duke.command;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 import seedu.duke.ExpenseList;
 import seedu.duke.Ui;
-import java.util.logging.Logger;
-import java.util.logging.Level;
 
 /**
  * Lists all recorded expenses.
