@@ -1,11 +1,14 @@
 package seedu.duke;
 
 import java.util.ArrayList;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  * Manages the list of expenses.
  */
 public class ExpenseList {
+    private static final Logger logger = Logger.getLogger(ExpenseList.class.getName());
 
     private ArrayList<Expense> expenses;
 
@@ -59,10 +62,14 @@ public class ExpenseList {
      * @return the total amount
      */
     public double getTotal() {
+        assert expenses != null : "Internal expense list should not be null";
+
         double total = 0;
         for (Expense expense : expenses) {
+            assert expense != null : "Expense entries should not be null";
             total += expense.getAmount();
         }
+        logger.log(Level.FINE, "Computed total {0} from {1} expenses", new Object[]{total, expenses.size()});
         return total;
     }
 }
