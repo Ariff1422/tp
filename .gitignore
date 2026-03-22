@@ -24,5 +24,4 @@ docs/reference/
 # SpendTrack data files
 /data/
 
-# Claude Code
-.claude/
+
