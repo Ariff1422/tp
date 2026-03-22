@@ -21,4 +21,7 @@ text-ui-test/EXPECTED-UNIX.TXT
 
 docs/reference/
 
-/data
+# SpendTrack data files
+/data/
+
+
