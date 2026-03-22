@@ -20,3 +20,5 @@ bin/
 text-ui-test/EXPECTED-UNIX.TXT
 
 docs/reference/
+
+/data
